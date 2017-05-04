@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wisdmjeans</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onload="myFunction()"  class="fixed-menu-body no-zoomify">
+    <div id="loader"></div>
+    <div class="modal fade quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+       <div class="modal-content">
+       <div class="close-cross">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       </div>
+		  <div class="col-xs-12 col-sm-7 products-zoom-part">
+			<div id="gallery_01">
+			 
+			  <a class="active" href="#" data-image="images/zoom-small-image1.jpg" data-zoom-image="images/zoom-large-image1.jpg">
+				<img src="images/zoom-thumb-image1.jpg" />
+			  </a>
+
+			  <a href="#" data-image="images/zoom-small-image2.jpg" data-zoom-image="images/zoom-large-image2.jpg">
+				<img src="images/zoom-thumb-image2.jpg" />
+			  </a>
+
+			  <a href="#" data-image="images/zoom-small-image3.jpg" data-zoom-image="images/zoom-large-image3.jpg">
+				<img src="images/zoom-thumb-image3.jpg" />
+			  </a>
+
+			  <a href="#" data-image="images/zoom-small-image4.jpg" data-zoom-image="images/zoom-large-image4.jpg">
+				<img src="images/zoom-thumb-image4.jpg" />
+			  </a>
+
+			</div>
+			<div class="products-zoom-image-wrap">
+				<img id="zoom_03" src="images/zoom-small-image1.jpg" data-zoom-image="images/zoom-large-image1.jpg"/>
+			</div>
+			
+		</div>
+		<div class="col-xs-12 col-sm-5 products-add-to-cart-section">
+			<h2>Selvedge Skinny Jeans In Light Blue Neppy Fabric</h2>
+			 <p class="products-price">£27.00 <span class="old-price">£45.00</span></p>
+			<a class="shipping-link">Free shipping Worldwide</a>
+			<p class="products-color"><strong>COLOUR:</strong> Light wash blue</p>
+			<p class="products-size">
+        <strong>SIZE:</strong><a class="procuts-size-guide-link">size guide</a>
+        <div class="procuts-details-page-size-dropdwon">
+          <span class="text">Select Size</span><span class="caret"></span>
+        </div>
+        <ul class="size-drop-down-link">
+          <li><a>30 UK (low rise)</a></li>
+          <li><a>32 US (mid rise)</a></li>
+          <li><a>34 UK (high rise)</a></li>
+          <li><a>38 UK (low rise)</a></li>
+          <li><a>42 US (mid rise)</a></li>
+          <li><a>46 UK (high rise)</a></li>
+        </ul>
+      </p>
+      <a class="add-to-cart-button" data-dismiss="modal">Add To Cart</a>
+       <a class="wishlist-link"><span class="glyphicon glyphicon-heart-empty"></span></a>
+		</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:none;" id="myDiv" class="animate-fade-in">
+	
+   <nav class="navbar navbar-fixed-top wisdmjeans-navbar">
+      <div class="container">
+        <div class="navbar-header">
+         
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Wisdmjeans logo">
+              <span class="wisdmjeans_title_txt">Wisdmjeans</span>
+          </a>
+          <ul class="wisdmjeans-shopping-cart-list">
+            <li><a><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li><a><span class="glyphicon glyphicon-log-in"></span></a></li>
+        </ul>
+        </div>
+      
+        <div id="navbar" class="collapse navbar-collapse wisdmjeans-navbar-links">
+          <ul class="nav navbar-nav">
+              <li><a href="" class="active"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+              <li ><a href="product_archive.html">Men</a></li>
+              <li><a href="product_archive.html">Women</a></li>
+              <li><a href="product_archive.html">Kids</a></li>
+              <li><a href="product_archive.html">Sale</a></li>
+              <li><a href="product_archive.html">New Arrival</a></li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  <!-- products-archive -->
+		
+  <section class="products-wrapper container no_pad">
+    <div class="col-xs-12 col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10 no_pad best-bet-title products-sort-wr">
+      <span>Men - Jeans</span>
+    </div>
+    <div class="col-xs-12 col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10 no_pad products-breadcrumbs-sort-wrap">
+      <ul class="breadcrumbs">
+        <li><a>Men</a></li>
+        <li> > </li>
+        <li><a>Jeans</a></li>
+      </ul>
+      <div class="sort-wrap">
+        <div class="sort-wrap-heading">
+          Sort By<span class="caret"></span>
+        </div>
+        <ul class="sort-wrap-content">
+          <li><a>Popularity</a></li>
+          <li><a>Price (High to Low)</a></li>
+          <li><a>Price (Low to High)</a></li>
+           <li><a>A - Z</a></li>
+          <li><a>Z - A</a></li>
+        </ul>
+      </div>
+      <div class="sort-block-div">
+      </div>
+    </div>
+    <div class="visible-xs col-xs-12 products-archive-filters-dropdown-wrap">
+      <a class="filters-dropdown">
+        Filters <span class="glyphicon glyphicon-filter"></span>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-lg-2 products-archive-filters-col no_pad">
+        <div class="products-wrapper-filter">
+           <h4>Fit</h4>
+           <ul class="list">
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Carrot Fit 
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Narrow Fit
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Pencil Fit
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Skinny Fit
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Slim Fit
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Straight Fit
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Super Slim Fit
+              </li>
+           </ul>
+        </div>
+        <div class="products-wrapper-filter">
+           <h4>Color</h4>
+           <ul class="list">
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Black 
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Black Stone
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Blue Dark
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Blue Deep
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Blue Light
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Coffee
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Grey
+              </li>
+           </ul>
+        </div>
+        <div class="products-wrapper-filter">
+           <h4>Rise</h4>
+           <ul class="list">
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Low Rise 
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                Mid Rise
+              </li>
+              <li>
+                <label class="check-box-label">
+                  <input type="checkbox">
+                  <span class="box"><span class="tick"></span></span>
+                </label>
+                High Rise
+              </li>
+              
+           </ul>
+        </div>
+        <div class="products-wrapper-filter">
+          <h4>Size</h4>
+          <ul class="color-list">
+            <li><a>28</a></li>
+            <li><a>30</a></li>
+            <li><a>32</a></li>
+            <li><a>34</a></li>
+            <li><a>36</a></li>
+            <li><a>38</a></li>
+            <li><a>40</a></li>
+            <li><a>42</a></li>
+            <li><a>44</a></li>
+          </ul>
+        </div>
+        <div class="products-wrapper-filter">
+          <h4>Price</h4>
+          <div id="price-slider">
+          </div>
+          <div id="price-slider-min-value" class="pull-left">
+          </div>
+          <div id="price-slider-max-value" class="pull-right">
+          </div>
+        </div>
+        
+    </div>
+    <div class="col-xs-12 col-sm-9 col-lg-10 products-archive-list-of-products">
+      <div class="col-xs-12 no_pad products-archive-list-of-products-wrapper">
+        <ul class="products-archive-box">
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product1.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Selvedge Skinny Jeans In Light Blue Neppy Fabric</p>
+                <p><span class="old-price">$17.15</span><span class="new-price">$14.12</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product2.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal" >Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Cheap Monday Mid Spray Jeans Done Black Distress</p>
+                <p><span class="old-price">$40.00</span><span class="new-price">$21.00</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product3.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Only & Sons Skinny Jeans in Light Grey Denim</p>
+                <p><span class="old-price">$35.78</span><span class="new-price">$15.72</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product1.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Selvedge Skinny Jeans In Light Blue Neppy Fabric</p>
+                <p><span class="old-price">$17.15</span><span class="new-price">$14.12</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product2.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Cheap Monday Mid Spray Jeans Done Black Distress</p>
+                <p><span class="old-price">$40.00</span><span class="new-price">$21.00</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product3.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Only & Sons Skinny Jeans in Light Grey Denim</p>
+                <p><span class="old-price">$35.78</span><span class="new-price">$15.72</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product1.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Selvedge Skinny Jeans In Light Blue Neppy Fabric</p>
+                <p><span class="old-price">$17.15</span><span class="new-price">$14.12</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product2.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Cheap Monday Mid Spray Jeans Done Black Distress</p>
+                <p><span class="old-price">$40.00</span><span class="new-price">$21.00</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product_details_page.html">
+              <div class="img-wrap">
+                <img src="images/product3.jpg" class="img-responsive center-block">
+                <div class="products-view-wish-link">
+                  <div class="products-quick-view-link">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                    <div class="icon-text" data-toggle="modal" data-target=".quick-view-modal">Quick View</div>
+                  </div>
+                  <div class="products-wishlist-link">
+                    <i class="glyphicon glyphicon-heart-empty"></i>
+                    <div class="icon-text">Save</div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-rate">
+                <p>Only & Sons Skinny Jeans in Light Grey Denim</p>
+                <p><span class="old-price">$35.78</span><span class="new-price">$15.72</span></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer-wrap">
+    <div class="container no_pad">
+      <div class="col-xs-12 no_pad">
+        <div class="footer-part">
+          <h3>About</h3>
+          <ul class="footer-link-list">
+            <li><a>How it Works</a></li>
+          </ul>
+        </div>
+        <div class="footer-part">
+          <h3>Selling </h3>
+          <ul class="footer-link-list">
+            <li><a>Open a Boutique</a></li>
+          </ul>
+        </div>
+        <div class="footer-part">
+          <h3>Help </h3>
+          <ul class="footer-link-list">
+            <li><a>Help</a></li>
+            <li><a>Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-part">
+          <h3>Legal</h3>
+          <ul class="footer-link-list">
+            <li><a>Terms of Use</a></li>
+            <li><a>Privacy & Cookies</a></li>
+            <li><a>Copyright Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 copyright-wrapper">
+        All rights Reserved 2017 wisdmjeans.com
+      </div>
+    </div>
+  </footer>
+  
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.js"></script>
+	<script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
